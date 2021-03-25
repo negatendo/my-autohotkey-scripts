@@ -8,7 +8,7 @@ Click Right, down
 return
 
 ^x:: ; Press Ctrl+x to xp farm.
-Loop, 300
+Loop, 150
 {
 	; Attack! every second
 	Click
@@ -19,13 +19,13 @@ return
 ^/:: ; Press Ctrl+/ to ready show tracked statistic
 Send, /
 Sleep, 1000
-Send, scoreboard objectives set display ts_
+Send, scoreboard objectives setdisplay sidebar ts_
 return
 
 ^+/:: ; Press Ctrl+Shift+/ to clear statistics
 Send, /
 Sleep, 1000
-Send, scoreboard objectives set display
+Send, scoreboard objectives setdisplay sidebar
 Send, {Enter}
 return
 
